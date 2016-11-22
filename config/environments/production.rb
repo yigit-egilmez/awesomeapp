@@ -66,8 +66,7 @@ Rails.application.configure do
     :authentication => :login,
     :user_name      => ENV['SMTP_USERNAME'],
     :password       => ENV['SMTP_PASSWORD'],
-    :domain         => 'yuvatron.com',
-    :ssl  => true
+    :domain         => 'yuvatron.com'
   }
   # Ignore bad email addresses and do not raise email delivery errors.
   # Set this to true and configure the email server for immediate delivery to raise delivery errors.
