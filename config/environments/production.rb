@@ -56,7 +56,19 @@ Rails.application.configure do
   # config.active_job.queue_adapter     = :resque
   # config.active_job.queue_name_prefix = "awesomeapp_#{Rails.env}"
   config.action_mailer.perform_caching = false
-
+  config.action_mailer.raise_delivery_errors = true
+  config.action_mailer.delivery_method = :smtp
+  
+  config.action_mailer.default_url_options = { host: 'yuvatron.com' }
+  ActionMailer::Base.smtp_settings = {
+    :address        => 'email-smtp.us-west-2.amazonaws.com',
+    :port           => '587',
+    :authentication => :login,
+    :user_name      => ENV['SMTP_USERNAME'],
+    :password       => ENV['SMTP_PASSWORD'],
+    :domain         => 'yuvatron.com',
+    :ssl  => true
+  }
   # Ignore bad email addresses and do not raise email delivery errors.
   # Set this to true and configure the email server for immediate delivery to raise delivery errors.
   # config.action_mailer.raise_delivery_errors = false
