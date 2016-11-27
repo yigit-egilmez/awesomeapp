@@ -27,3 +27,6 @@
 
 #Elastic Beanstalk config
 .ebextentions/*
+
+# Ignore uploaded test images.
+/public/uploads
