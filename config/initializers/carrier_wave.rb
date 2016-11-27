@@ -11,7 +11,6 @@
     config.asset_host = 'http://awesomeapp-env.8pmmyucsp2.us-west-2.elasticbeanstalk.com/'
 
     config.aws_credentials = {
-        provider:          'AWS',
         access_key_id:     'AKIAIW5JWKEYUYTZZMDA',
         secret_access_key: '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' ,
         region:            'us-east-1' # Required
