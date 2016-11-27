@@ -8,8 +8,6 @@
     config.aws_acl    = :public_read
     config.aws_authenticated_url_expiration = 60 * 60 * 24 * 7
     
-    config.asset_host = 'http://awesomeapp-env.8pmmyucsp2.us-west-2.elasticbeanstalk.com/'
-
     config.aws_credentials = {
         access_key_id:     'AKIAIW5JWKEYUYTZZMDA',
         secret_access_key: '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' ,
